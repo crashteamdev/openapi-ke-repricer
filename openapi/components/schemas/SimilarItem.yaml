@@ -1,0 +1,12 @@
+type: object
+properties:
+  productId:
+    type: number
+    format: int64
+  skuId:
+    type: number
+    format: int64
+  name:
+    type: string
+  photoKey:
+    type: string

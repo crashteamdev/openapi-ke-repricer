@@ -1,0 +1,24 @@
+parameters:
+  - $ref: ../components/parameters/requestId.yaml
+  - $ref: ../components/parameters/keAccountId.yaml
+patch:
+  summary: Переключить состояние мониторинга аккаунта KazanExpress
+  operationId: patchKeAccountMonitoringState
+  tags:
+    - account
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/PatchKeAccountMonitoringState.yaml
+  responses:
+    '200':
+      description: Состояние мониторинга изменено
+    '400':
+      $ref: '../components/responses/BadRequest.yaml'
+    '401':
+      $ref: ../components/responses/Unauthorized.yaml
+    '403':
+      $ref: ../components/responses/Forbidden.yaml
+    '404':
+      description: Аккаунт не найден

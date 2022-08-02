@@ -1,0 +1,18 @@
+type: object
+properties:
+  name:
+    type: string
+  productId:
+    type: number
+    format: int64
+  skuId:
+    type: number
+    format: int64
+  fullPrice:
+    $ref: ./MoneyAmount.yaml
+  sellPrice:
+    $ref: ./MoneyAmount.yaml
+  availableAmount:
+    type: number
+    format: int64
+

@@ -1,0 +1,20 @@
+parameters:
+  - $ref: ../components/parameters/requestId.yaml
+post:
+  summary: Создать платеж на выбранный тарифный план
+  operationId: createSubsriptionPayment
+  tags:
+    - account
+  requestBody:
+    $ref: ../components/requestBodies/AddKeAccountShopItemCompetitor.yaml
+  responses:
+    '200':
+      description: Конкурентный товар добавлен
+    '400':
+      $ref: ../components/responses/BadRequest.yaml
+    '401':
+      $ref: ../components/responses/Unauthorized.yaml
+    '403':
+      $ref: ../components/responses/Forbidden.yaml
+    '409':
+      description: Достигнуто максимальное кол-во товаров в пуле

@@ -1,0 +1,25 @@
+parameters:
+  - $ref: ../components/parameters/requestId.yaml
+  - $ref: ../components/parameters/keAccountId.yaml
+get:
+  summary: Получить кол-во товаров в пуле
+  operationId: getKeAccountShopItemPoolCount
+  tags:
+    - item
+  responses:
+    '200':
+      description: Кол-во товаров в пуле
+      content:
+        application/json:
+          schema:
+            properties:
+              count:
+                type: number
+                format: int32
+    '400':
+      $ref: ../components/responses/BadRequest.yaml
+    '401':
+      $ref: ../components/responses/Unauthorized.yaml
+    '403':
+      $ref: ../components/responses/Forbidden.yaml
+

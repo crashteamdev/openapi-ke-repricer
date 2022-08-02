@@ -1,0 +1,13 @@
+content:
+  application/json:
+    schema:
+      required:
+        - subscriptionPlan
+        - multiply
+      properties:
+        subscriptionPlan:
+          $ref: ../schemas/SubscriptionPlan.yaml
+        multiply:
+          description: Срок на который приобретается подписка. Наприме 1 = 1 месяц
+          type: number
+          format: int32

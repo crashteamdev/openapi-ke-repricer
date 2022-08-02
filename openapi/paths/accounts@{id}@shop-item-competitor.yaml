@@ -1,0 +1,37 @@
+parameters:
+  - $ref: ../components/parameters/requestId.yaml
+  - $ref: ../components/parameters/keAccountId.yaml
+post:
+  summary: Добавить конкурентный товар для отслеживания
+  operationId: addKeAccountShopItemCompetitor
+  tags:
+    - item
+  requestBody:
+    $ref: ../components/requestBodies/AddKeAccountShopItemCompetitor.yaml
+  responses:
+    '200':
+      description: Конкурентный товар добавлен
+    '400':
+      $ref: ../components/responses/BadRequest.yaml
+    '401':
+      $ref: ../components/responses/Unauthorized.yaml
+    '403':
+      $ref: ../components/responses/Forbidden.yaml
+    '409':
+      description: Достигнуто максимальное кол-во товаров в пуле
+delete:
+  summary: Удалить конкурентный товар из списка отслеживаемых
+  operationId: removeKeAccountShopItemCompetitor
+  tags:
+    - item
+  requestBody:
+    $ref: ../components/requestBodies/RemoveKeAccountShopItemCompetitor.yaml
+  responses:
+    '200':
+      description: Конкурентный товар удален
+    '400':
+      $ref: ../components/responses/BadRequest.yaml
+    '401':
+      $ref: ../components/responses/Unauthorized.yaml
+    '403':
+      $ref: ../components/responses/Forbidden.yaml

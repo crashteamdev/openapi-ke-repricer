@@ -1,0 +1,56 @@
+parameters:
+  - $ref: ../components/parameters/requestId.yaml
+  - $ref: ../components/parameters/keAccountId.yaml
+get:
+  summary: Получить данные аккаунта KazanExpress
+  operationId: getKeAccount
+  tags:
+    - account
+  responses:
+    '200':
+      description: Получены данные аккаунта KazanExpress
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/KeAccount.yaml
+    '400':
+      $ref: '../components/responses/BadRequest.yaml'
+    '401':
+      $ref: ../components/responses/Unauthorized.yaml
+    '403':
+      $ref: ../components/responses/Forbidden.yaml
+    '404':
+      description: Аккаунт не найден
+patch:
+  summary: Обновить данные аккаунта KazanExpress
+  operationId: patchKeAccount
+  tags:
+    - account
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/PatchKeAccount.yaml
+  responses:
+    '200':
+      description: Данные аккаунта KazanExpress обновлены.
+    '400':
+      $ref: '../components/responses/BadRequest.yaml'
+    '401':
+      $ref: ../components/responses/Unauthorized.yaml
+    '403':
+      $ref: ../components/responses/Forbidden.yaml
+    '404':
+      description: Аккаунт не найден
+delete:
+  summary: Удалить аккаунт KazanExpress
+  operationId: deleteKeAccount
+  tags:
+    - account
+  responses:
+    '204':
+      description: Аккаунт KazanExpress удален.
+    '401':
+      $ref: ../components/responses/Unauthorized.yaml
+    '404':
+      $ref: ../components/responses/NotFound.yaml

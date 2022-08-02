@@ -1,0 +1,38 @@
+parameters:
+  - $ref: ../components/parameters/requestId.yaml
+  - $ref: ../components/parameters/keAccountId.yaml
+post:
+  summary: Добавить товар в пул для отслеживания
+  operationId: addKeAccountShopItemPool
+  tags:
+    - item
+  requestBody:
+    $ref: ../components/requestBodies/AddKeAccountShopItemIntoPool.yaml
+  responses:
+    '200':
+      description: Товар добавлен
+    '400':
+      $ref: ../components/responses/BadRequest.yaml
+    '401':
+      $ref: ../components/responses/Unauthorized.yaml
+    '403':
+      $ref: ../components/responses/Forbidden.yaml
+    '409':
+      description: Достигнуто максимальное кол-во товаров в пуле
+delete:
+  summary: Удалить товар из пула для отслеживания
+  operationId: removeKeAccountShopItemPool
+  tags:
+    - item
+  requestBody:
+    $ref: ../components/requestBodies/RemoveKeAccountShopItemIntoPool.yaml
+  responses:
+    '204':
+      description: Товар удален
+    '400':
+      $ref: ../components/responses/BadRequest.yaml
+    '401':
+      $ref: ../components/responses/Unauthorized.yaml
+    '403':
+      $ref: ../components/responses/Forbidden.yaml
+

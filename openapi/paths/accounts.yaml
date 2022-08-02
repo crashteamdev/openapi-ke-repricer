@@ -1,0 +1,44 @@
+get:
+  summary: Получение списка KazanExpress аккаунтов
+  operationId: getKeAccounts
+  tags:
+    - account
+  parameters:
+    - $ref: ../components/parameters/requestId.yaml
+  responses:
+    '200':
+      description: Получен список KazanExpress аккаунтов
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: ../components/schemas/KeAccount.yaml
+    '400':
+      $ref: ../components/responses/BadRequest.yaml
+    '401':
+      $ref: ../components/responses/Unauthorized.yaml
+    '403':
+      $ref: ../components/responses/Forbidden.yaml
+    '404':
+      description: Аккаунты не найдены
+post:
+  summary: Добавить KazanExpress аккаунт
+  operationId: addKeAccount
+  tags:
+    - account
+  parameters:
+    - $ref: ../components/parameters/requestId.yaml
+  requestBody:
+    $ref: ../components/requestBodies/AddKeAccount.yaml
+  responses:
+    '201':
+      description: Аккаунт добавлен
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/KeAccount.yaml
+    '401':
+      $ref: ../components/responses/Unauthorized.yaml
+    '403':
+      $ref: ../components/responses/Forbidden.yaml

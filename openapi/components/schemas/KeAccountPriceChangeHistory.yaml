@@ -1,0 +1,17 @@
+type: object
+properties:
+  id:
+    type: string
+    format: uuid
+  shopName:
+    type: string
+  itemName:
+    type: string
+  oldPrice:
+    $ref: ./MoneyAmount.yaml
+  newPrice:
+    $ref: ./MoneyAmount.yaml
+  barcode:
+    type: number
+    format: int64
+

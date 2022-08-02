@@ -1,0 +1,31 @@
+type: object
+properties:
+  id:
+    type: string
+    format: uuid
+  productId:
+    type: string
+  skuId:
+    type: string
+  name:
+    type: string
+  photoKey:
+    type: string
+  fullPrice:
+    $ref: ./MoneyAmount.yaml
+  sellPrice:
+    $ref: ./MoneyAmount.yaml
+  barcode:
+    type: number
+    format: int64
+  availableAmount:
+    type: number
+    format: int64
+  minimumThreshold:
+    $ref: ./MoneyAmount.yaml
+  maximumThreshold:
+    $ref: ./MoneyAmount.yaml
+  step:
+    type: number
+    format: int32
+
