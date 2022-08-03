@@ -3,16 +3,16 @@ properties:
   name:
     type: string
   productId:
-    type: number
+    type: integer
     format: int64
   skuId:
-    type: number
+    type: integer
     format: int64
   fullPrice:
     $ref: ./MoneyAmount.yaml
   sellPrice:
     $ref: ./MoneyAmount.yaml
   availableAmount:
-    type: number
+    type: integer
     format: int64
 

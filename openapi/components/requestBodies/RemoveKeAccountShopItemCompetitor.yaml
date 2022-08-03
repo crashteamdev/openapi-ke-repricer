@@ -8,8 +8,8 @@ content:
         shopItemRef:
           $ref: ../schemas/ShopItemRef.yaml
         competitorProductId:
-          type: number
+          type: integer
           format: int64
         competitorSkuId:
-          type: number
+          type: integer
           format: int64

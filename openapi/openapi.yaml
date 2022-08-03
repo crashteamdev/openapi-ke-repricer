@@ -32,9 +32,9 @@ paths:
     $ref: './paths/accounts@{id}@monitor.yaml'
   '/account/{id}/price-history':
     $ref: './paths/accounts@{id}@price-history.yaml'
-  '/accounts/{id}/shop/{shopId}/items':
+  '/accounts/{id}/shops/{shopId}/items':
     $ref: './paths/accounts@{id}@shop@{shopId}@items.yaml'
-  '/accounts/{id}/shop/{shopId}/pool-items':
+  '/accounts/{id}/shops/{shopId}/pool-items':
     $ref: './paths/accounts@{id}@shop@{shopId}@pool-items.yaml'
   '/accounts/{id}/pool-items':
     $ref: './paths/accounts@{id}@shop-item-pool.yaml'
@@ -42,9 +42,9 @@ paths:
     $ref: './paths/accounts@{id}@shop-item-pool-count.yaml'
   '/accounts/{id}/shop-item-competitor':
     $ref: './paths/accounts@{id}@shop-item-competitor.yaml'
-  '/accounts/{id}/shop/{shopId}/item/${shopItemId}/competitor-items':
-    $ref: './paths/accounts@{id}@shop@{shopId}item@{shopItemId}@competitor-items.yaml'
-  '/accounts/{id}/shop/{shopId}/similar':
+  '/accounts/{id}/shops/{shopId}/items/${shopItemId}/competitor-items':
+    $ref: './paths/accounts@{id}@shops@{shopId}items@{shopItemId}@competitor-items.yaml'
+  '/accounts/{id}/shops/{shopId}/similar':
     $ref: './paths/accounts@{id}@shop@{shopId}@similar.yaml'
   '/subscription':
     $ref: './paths/subscription.yaml'

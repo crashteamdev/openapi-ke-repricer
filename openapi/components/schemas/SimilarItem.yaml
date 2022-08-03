@@ -1,10 +1,10 @@
 type: object
 properties:
   productId:
-    type: number
+    type: integer
     format: int64
   skuId:
-    type: number
+    type: integer
     format: int64
   name:
     type: string

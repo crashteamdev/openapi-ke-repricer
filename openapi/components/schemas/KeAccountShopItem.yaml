@@ -16,10 +16,10 @@ properties:
   sellPrice:
     $ref: ./MoneyAmount.yaml
   barcode:
-    type: number
+    type: integer
     format: int64
   availableAmount:
-    type: number
+    type: integer
     format: int64
   minimumThreshold:
     $ref: ./MoneyAmount.yaml

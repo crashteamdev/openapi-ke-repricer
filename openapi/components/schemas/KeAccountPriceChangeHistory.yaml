@@ -12,6 +12,6 @@ properties:
   newPrice:
     $ref: ./MoneyAmount.yaml
   barcode:
-    type: number
+    type: integer
     format: int64
 
