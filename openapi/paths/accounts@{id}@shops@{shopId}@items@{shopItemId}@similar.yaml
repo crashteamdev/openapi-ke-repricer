@@ -2,6 +2,7 @@ parameters:
   - $ref: ../components/parameters/requestId.yaml
   - $ref: ../components/parameters/keAccountId.yaml
   - $ref: ../components/parameters/keAccountShopId.yaml
+  - $ref: ../components/parameters/keAccountShopItemId.yaml
 get:
   summary: Получение списка возможных конкурентных товаров
   operationId: getKeAccountShopItemSimilar
