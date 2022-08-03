@@ -7,13 +7,14 @@ get:
     - $ref: ../components/parameters/requestId.yaml
     - $ref: ../components/parameters/keAccountId.yaml
     - $ref: ../components/parameters/keAccountShopId.yaml
+    - $ref: ../components/parameters/keAccountShopItemId.yaml
     - $ref: ../components/parameters/collectionLimit.yaml
     - $ref: ../components/parameters/collectionOffset.yaml
     - $ref: ../components/parameters/collectionFilter.yaml
     - $ref: ../components/parameters/collectionSort.yaml
   responses:
     '200':
-      description: Получен список товаров магазина пользователя
+      description: Получен список назначенных конкурентов товара
       content:
         application/json:
           schema:

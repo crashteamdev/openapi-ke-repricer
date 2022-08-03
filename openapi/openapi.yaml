@@ -42,8 +42,8 @@ paths:
     $ref: './paths/accounts@{id}@shop-item-pool-count.yaml'
   '/accounts/{id}/shop-item-competitor':
     $ref: './paths/accounts@{id}@shop-item-competitor.yaml'
-  '/accounts/{id}/shop/{shopId}/competitor-items':
-    $ref: './paths/accounts@{id}@shop@{shopId}@competitor-items.yaml'
+  '/accounts/{id}/shop/{shopId}/item/${shopItemId}/competitor-items':
+    $ref: './paths/accounts@{id}@shop@{shopId}item@{shopItemId}@competitor-items.yaml'
   '/accounts/{id}/shop/{shopId}/similar':
     $ref: './paths/accounts@{id}@shop@{shopId}@similar.yaml'
   '/subscription':
