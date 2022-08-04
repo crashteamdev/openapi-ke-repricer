@@ -1,9 +1,8 @@
 parameters:
   - $ref: ../components/parameters/requestId.yaml
-  - $ref: ../components/parameters/keAccountId.yaml
 get:
-  summary: Получить кол-во товаров в пуле
-  operationId: getKeAccountShopItemPoolCount
+  summary: Получить общее кол-во товаров в пуле на отслеживание
+  operationId: getAccountShopItemPoolCount
   tags:
     - item
   responses:
