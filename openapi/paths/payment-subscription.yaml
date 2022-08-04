@@ -6,7 +6,7 @@ post:
   tags:
     - account
   requestBody:
-    $ref: ../components/requestBodies/AddKeAccountShopItemCompetitor.yaml
+    $ref: ../components/requestBodies/CreateSubscriptionPayment.yaml
   responses:
     '200':
       description: Конкурентный товар добавлен

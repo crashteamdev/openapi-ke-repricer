@@ -2,14 +2,12 @@ content:
   application/json:
     schema:
       required:
-        - shopId
         - shopItemId
+        - competitorId
       properties:
-        shopItemRef:
-          $ref: ../schemas/ShopItemRef.yaml
-        competitorProductId:
-          type: integer
-          format: int64
-        competitorSkuId:
-          type: integer
-          format: int64
+        shopItemId:
+          type: string
+          format: uuid
+        competitorId:
+          type: string
+          format: uuid
