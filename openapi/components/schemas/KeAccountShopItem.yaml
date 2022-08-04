@@ -4,9 +4,11 @@ properties:
     type: string
     format: uuid
   productId:
-    type: string
+    type: integer
+    format: int64
   skuId:
-    type: string
+    type: integer
+    format: int64
   name:
     type: string
   photoKey:
