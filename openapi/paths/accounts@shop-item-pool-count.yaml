@@ -13,7 +13,7 @@ get:
           schema:
             properties:
               count:
-                type: number
+                type: integer
                 format: int32
     '400':
       $ref: ../components/responses/BadRequest.yaml
