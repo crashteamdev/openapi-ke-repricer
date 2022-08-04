@@ -8,9 +8,7 @@ properties:
   skuId:
     type: integer
     format: int64
-  fullPrice:
-    $ref: ./MoneyAmount.yaml
-  sellPrice:
+  price:
     $ref: ./MoneyAmount.yaml
   availableAmount:
     type: integer
