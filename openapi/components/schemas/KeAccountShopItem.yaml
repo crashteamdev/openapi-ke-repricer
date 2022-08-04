@@ -28,6 +28,6 @@ properties:
   maximumThreshold:
     $ref: ./MoneyAmount.yaml
   step:
-    type: number
+    type: integer
     format: int32
 
