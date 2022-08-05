@@ -2,12 +2,10 @@ parameters:
   - $ref: ../components/parameters/requestId.yaml
   - $ref: ../components/parameters/keAccountId.yaml
 post:
-  summary: Обновить данные аккунта в системе (исходя из данных в KazanExpress)
+  summary: Обновить данные аккунта в системе (в соответствии с данными в KazanExpress)
   operationId: updateKeAccountData
   tags:
     - account
-  requestBody:
-    $ref: ../components/requestBodies/AddKeAccount.yaml
   responses:
     '200':
       description: Задача на обновление аккаунта добавлена
@@ -15,3 +13,5 @@ post:
       $ref: ../components/responses/Unauthorized.yaml
     '403':
       $ref: ../components/responses/Forbidden.yaml
+    '409':
+      $ref: ../components/responses/Conflict.yaml

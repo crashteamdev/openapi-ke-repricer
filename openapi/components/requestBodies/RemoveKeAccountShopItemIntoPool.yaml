@@ -7,5 +7,7 @@ content:
       properties:
         shopId:
           type: string
+          format: uuid
         shopItemId:
           type: string
+          format: uuid
