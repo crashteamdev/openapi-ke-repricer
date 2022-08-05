@@ -21,11 +21,11 @@ post:
       description: Достигнуто максимальное кол-во товаров в пуле
 delete:
   summary: Удалить товар из пула для отслеживания
-  operationId: removeKeAccountShopItemPool
+  operationId: removeKeAccountShopItemFromPool
   tags:
     - item
   requestBody:
-    $ref: ../components/requestBodies/RemoveKeAccountShopItemIntoPool.yaml
+    $ref: ../components/requestBodies/RemoveKeAccountShopItemFromPool.yaml
   responses:
     '204':
       description: Товар удален
