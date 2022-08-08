@@ -1,13 +1,13 @@
 get:
-  summary: Информации о подписке аккаунта
-  operationId: getAccountSubscription
+  summary: Информации о подписке пользователя
+  operationId: getUserSubscription
   tags:
-    - account
+    - subscription
   parameters:
     - $ref: ../components/parameters/requestId.yaml
   responses:
     '200':
-      description: Получена информация о подписке
+      description: Получена информация о подписке пользователя
       content:
         application/json:
           schema:

@@ -1,5 +1,7 @@
 type: object
 properties:
-  subscription:
-    $ref: ./Subscription.yaml
-
+  plan:
+    $ref: ./SubscriptionPlan.yaml
+  validUntil:
+    type: string
+    format: date-time

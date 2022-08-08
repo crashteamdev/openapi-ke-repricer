@@ -46,8 +46,10 @@ paths:
     $ref: './paths/accounts@{id}@shops@{shopId}items@{shopItemId}@competitor-items.yaml'
   '/accounts/{id}/shops/{shopId}/items/${shopItemId}/similar':
     $ref: './paths/accounts@{id}@shops@{shopId}@items@{shopItemId}@similar.yaml'
-  '/subscription':
-    $ref: './paths/subscription.yaml'
+  '/user/subscription':
+    $ref: './paths/user@subscription.yaml'
+  '/subscriptions':
+    $ref: './paths/subscriptions.yaml'
   '/payment/subscription':
     $ref: './paths/payment-subscription.yaml'
 

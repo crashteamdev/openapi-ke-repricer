@@ -4,6 +4,6 @@ properties:
     type: string
   plan:
     $ref: ./SubscriptionPlan.yaml
-  validUntil:
-    type: string
-    format: date-time
+  price:
+    type: integer
+    format: int64
