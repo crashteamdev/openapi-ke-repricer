@@ -30,8 +30,10 @@ paths:
     $ref: './paths/accounts@{id}@shops.yaml'
   '/accounts/{id}/monitor':
     $ref: './paths/accounts@{id}@monitor.yaml'
-  '/account/{id}/price-history':
+  '/accounts/{id}/price-history':
     $ref: './paths/accounts@{id}@price-history.yaml'
+  '/accounts/{id}/items/{shopItemId}':
+    $ref: './paths/accounts@{id}@items@{shopItemId}@.yaml'
   '/accounts/{id}/shops/{shopId}/items':
     $ref: './paths/accounts@{id}@shops@{shopId}@items.yaml'
   '/accounts/{id}/shops/{shopId}/pool-items':

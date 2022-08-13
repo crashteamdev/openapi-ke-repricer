@@ -3,6 +3,12 @@ properties:
   id:
     type: string
     format: uuid
+  productId:
+    type: integer
+    format: int64
+  skuId:
+    type: integer
+    format: int64
   shopName:
     type: string
   itemName:

@@ -1,0 +1,25 @@
+parameters:
+  - $ref: ../components/parameters/requestId.yaml
+  - $ref: ../components/parameters/keAccountId.yaml
+  - $ref: ../components/parameters/keAccountShopItemId.yaml
+get:
+  summary: Получить информацию по товару пользователя
+  operationId: getKeAccountShopItem
+  tags:
+    - item
+  responses:
+    '200':
+      description: Получена информация о товаре пользователя
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/KeAccountShopItem.yaml
+    '400':
+      $ref: ../components/responses/BadRequest.yaml
+    '401':
+      $ref: ../components/responses/Unauthorized.yaml
+    '403':
+      $ref: ../components/responses/Forbidden.yaml
+    '404':
+      description: Товар не найден
+
