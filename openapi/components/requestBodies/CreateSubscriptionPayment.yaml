@@ -4,6 +4,7 @@ content:
       required:
         - subscriptionPlan
         - multiply
+        - redirectUrl
       properties:
         subscriptionPlan:
           $ref: ../schemas/SubscriptionPlan.yaml
@@ -11,3 +12,6 @@ content:
           description: Срок на который приобретается подписка. Наприме 1 = 1 месяц
           type: number
           format: int32
+        redirectUrl:
+          description: Куда перенаправлять пользователя после проведения платежа
+          type: string
