@@ -9,8 +9,14 @@ post:
   requestBody:
     $ref: ../components/requestBodies/CreateSubscriptionPayment.yaml
   responses:
-    '200':
-      description: Конкурентный товар добавлен
+    '201':
+      description: Платеж создан
+      content:
+        application/json:
+          schema:
+            properties:
+              paymentUrl:
+                type: string
     '400':
       $ref: ../components/responses/BadRequest.yaml
     '401':
