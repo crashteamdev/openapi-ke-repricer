@@ -8,6 +8,7 @@ get:
     - $ref: ../components/parameters/keAccountId.yaml
     - $ref: ../components/parameters/collectionLimit.yaml
     - $ref: ../components/parameters/collectionOffset.yaml
+    - $ref: ../components/parameters/collectionFilter.yaml
     - $ref: ../components/parameters/collectionSort.yaml
   responses:
     '200':
