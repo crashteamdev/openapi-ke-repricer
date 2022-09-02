@@ -5,6 +5,8 @@ properties:
     format: uuid
   name:
     type: string
+  email:
+    type: string
   lastUpdate:
     type: string
     format: date-time

@@ -42,6 +42,8 @@ patch:
       $ref: ../components/responses/Forbidden.yaml
     '404':
       description: Аккаунт не найден
+    '409':
+      $ref: ../components/responses/Conflict.yaml
 delete:
   summary: Удалить аккаунт KazanExpress
   operationId: deleteKeAccount
