@@ -14,4 +14,6 @@ properties:
     $ref: ./MonitorState.yaml
   updateState:
     $ref: ./UpdateState.yaml
+  initializeState:
+    $ref: ./InitializeState.yaml
 
