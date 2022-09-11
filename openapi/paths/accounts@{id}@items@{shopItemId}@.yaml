@@ -21,5 +21,31 @@ get:
     '403':
       $ref: ../components/responses/Forbidden.yaml
     '404':
-      description: Товар не найден
+      $ref: ../components/responses/NotFound.yaml
+patch:
+  summary: Редактировать параметры изменения цены товара
+  operationId: patchKeAccountShopitem
+  tags:
+    - item
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/PatchKeAccountShopItem.yaml
+    required: true
+  responses:
+    '200':
+      description: Параметры успешно отредактированы
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/KeAccountShopItem.yaml
+    '400':
+      $ref: ../components/responses/BadRequest.yaml
+    '401':
+      $ref: ../components/responses/Unauthorized.yaml
+    '403':
+      $ref: ../components/responses/Forbidden.yaml
+    '404':
+      $ref: ../components/responses/NotFound.yaml
 

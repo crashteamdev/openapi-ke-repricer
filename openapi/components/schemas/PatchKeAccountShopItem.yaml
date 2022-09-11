@@ -1,0 +1,11 @@
+type: object
+required:
+  - status
+properties:
+  minimumThreshold:
+    $ref: ./MoneyAmount.yaml
+  maximumThreshold:
+    $ref: ./MoneyAmount.yaml
+  step:
+    type: integer
+    format: int32
