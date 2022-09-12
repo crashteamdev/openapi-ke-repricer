@@ -3,9 +3,9 @@ required:
   - status
 properties:
   minimumThreshold:
-    $ref: ./MoneyAmount.yaml
+    $ref: ./MoneyAmountMinor.yaml
   maximumThreshold:
-    $ref: ./MoneyAmount.yaml
+    $ref: ./MoneyAmountMinor.yaml
   step:
     type: integer
     format: int32
