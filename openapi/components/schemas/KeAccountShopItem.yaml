@@ -28,4 +28,6 @@ properties:
   step:
     type: integer
     format: int32
+  discount:
+    $ref: ./Discount.yaml
 
