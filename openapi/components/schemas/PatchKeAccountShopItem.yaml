@@ -9,3 +9,7 @@ properties:
   step:
     type: integer
     format: int32
+  discount:
+    type: number
+    minimum: 0
+    maximum: 100

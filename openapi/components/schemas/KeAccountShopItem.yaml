@@ -13,9 +13,7 @@ properties:
     type: string
   photoKey:
     type: string
-  fullPrice:
-    $ref: ./MoneyAmount.yaml
-  sellPrice:
+  price:
     $ref: ./MoneyAmount.yaml
   barcode:
     type: integer
