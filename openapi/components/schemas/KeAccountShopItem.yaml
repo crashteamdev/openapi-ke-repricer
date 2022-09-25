@@ -9,6 +9,8 @@ properties:
   skuId:
     type: integer
     format: int64
+  skuTitle:
+    type: string
   name:
     type: string
   photoKey:
