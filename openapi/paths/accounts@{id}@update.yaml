@@ -2,7 +2,7 @@ parameters:
   - $ref: ../components/parameters/requestId.yaml
   - $ref: ../components/parameters/keAccountId.yaml
 post:
-  summary: Обновить данные аккунта в системе (в соответствии с данными в KazanExpress)
+  summary: Синхронизация данных аккаунта с системой KazanExpress
   operationId: updateKeAccountData
   tags:
     - account

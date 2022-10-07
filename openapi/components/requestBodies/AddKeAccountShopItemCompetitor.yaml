@@ -2,11 +2,13 @@ content:
   application/json:
     schema:
       required:
-        - shopId
-        - shopItemId
+        - shopItemRef
       properties:
         shopItemRef:
           $ref: ../schemas/ShopItemRef.yaml
+        url:
+          description: link to the product on KazanExpress
+          type: string
         competitorProductId:
           type: integer
           format: int64
