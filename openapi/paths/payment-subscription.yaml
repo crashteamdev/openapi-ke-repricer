@@ -3,6 +3,9 @@ parameters:
   - $ref: ../components/parameters/idempotencyKey.yaml
 post:
   summary: Создать платеж на выбранный тарифный план
+  description: |
+    Создание платежа может быть ограниченно текущим тарифным планом.
+    К примеру, пользователь может не иметь возможности понизить тарифный план, если выбранный план превышает текущие лимиты
   operationId: createSubsriptionPayment
   tags:
     - payment

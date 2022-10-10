@@ -2,7 +2,7 @@ get:
   summary: Получение истории изменений цены товаров на KazanExpress аккаунте
   operationId: getKeAccountShopItemPriceChangeHistory
   tags:
-    - item
+    - account
   parameters:
     - $ref: ../components/parameters/requestId.yaml
     - $ref: ../components/parameters/keAccountId.yaml

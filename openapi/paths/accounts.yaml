@@ -24,6 +24,8 @@ get:
       description: Аккаунты не найдены
 post:
   summary: Добавить KazanExpress аккаунт
+  description: |
+    Добавление аккаунтов ограничено тарифом пользователя.
   operationId: addKeAccount
   tags:
     - account

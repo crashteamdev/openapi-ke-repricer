@@ -3,6 +3,8 @@ parameters:
   - $ref: ../components/parameters/keAccountId.yaml
 post:
   summary: Добавить товар в пул для отслеживания
+  description: |
+    Добавление товара в пул ограниченно тарифом пользователя.
   operationId: addKeAccountShopItemPool
   tags:
     - item
