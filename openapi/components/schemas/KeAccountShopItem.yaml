@@ -32,4 +32,6 @@ properties:
     format: int32
   discount:
     $ref: ./Discount.yaml
+  isInPool:
+    type: boolean
 
