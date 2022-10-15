@@ -1,5 +1,8 @@
 type: object
 properties:
+  id:
+    type: string
+    format: uuid
   name:
     type: string
   productId:
@@ -13,4 +16,6 @@ properties:
   availableAmount:
     type: integer
     format: int64
+  photoKey:
+    type: string
 
