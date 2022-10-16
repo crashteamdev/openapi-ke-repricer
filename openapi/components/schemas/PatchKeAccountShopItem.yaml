@@ -9,5 +9,6 @@ properties:
   step:
     type: integer
     format: int32
+    minimum: 1
   discount:
     $ref: ./Discount.yaml
