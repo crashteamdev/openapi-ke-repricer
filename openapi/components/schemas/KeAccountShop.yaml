@@ -5,3 +5,5 @@ properties:
     format: uuid
   name:
     type: string
+  skuTitle:
+    type: string
