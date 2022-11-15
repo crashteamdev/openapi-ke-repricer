@@ -56,6 +56,8 @@ paths:
     $ref: './paths/subscriptions.yaml'
   '/payment/subscription':
     $ref: './paths/payment-subscription.yaml'
+  '/similar/products':
+    $ref: './paths/similar-products.yaml'
 
 components:
   securitySchemes:
