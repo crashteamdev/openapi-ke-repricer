@@ -1,4 +1,4 @@
-name: productId
+name: strategyId
 in: query
 description: Идентификатор стратегии вычисления цены в системе
 required: true
