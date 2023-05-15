@@ -1,0 +1,11 @@
+type: object
+required:
+  - login
+  - password
+properties:
+  strategyName:
+    $ref: ./StrategyName.yaml
+  minimumThreshold:
+    $ref: ./MoneyAmount.yaml
+  maximumThreshold:
+    $ref: ./MoneyAmount.yaml

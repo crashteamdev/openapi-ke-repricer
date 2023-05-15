@@ -1,0 +1,19 @@
+content:
+  application/json:
+    schema:
+      required:
+        - strategyName
+        - minimumThreshold
+        - maximumThreshold
+        - keAccountShopItemId
+      properties:
+        keAccountShopItemId:
+          type: string
+          format: uuid
+        strategyName:
+          $ref: ../schemas/StrategyName.yaml
+        minimumThreshold:
+          $ref: ../schemas/MoneyAmount.yaml
+        maximumThreshold:
+          $ref: ..schemas/MoneyAmount.yaml
+
