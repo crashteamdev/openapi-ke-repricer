@@ -2,7 +2,5 @@ type: object
 properties:
   strategyName:
     $ref: ./StrategyName.yaml
-  minimumThreshold:
-    $ref: ./MoneyAmount.yaml
-  maximumThreshold:
-    $ref: ./MoneyAmount.yaml
+  strategyParams:
+    $ref: ./StrategyParams.yaml

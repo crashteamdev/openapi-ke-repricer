@@ -12,6 +12,4 @@ content:
         strategyName:
           $ref: ../schemas/StrategyName.yaml
         strategyParams:
-          oneOf:
-            - $ref: '../schemas/CloseToMinimalStrategy.yaml'
-            - $ref: '../schemas/QuantityDependentStrategy.yaml'
+          $ref: ../schemas/StrategyParams.yaml

@@ -7,8 +7,6 @@ properties:
     $ref: ./KeAccountShopItemId.yaml
   strategyName:
     $ref: ./StrategyName.yaml
-  minimumThreshold:
-    $ref: ./MoneyAmount.yaml
-  maximumThreshold:
-    $ref: ./MoneyAmount.yaml
+  strategyParams:
+    $ref: ../schemas/StrategyParams.yaml
 
