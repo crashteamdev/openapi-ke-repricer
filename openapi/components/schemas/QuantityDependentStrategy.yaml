@@ -1,7 +1,8 @@
 type: object
+required:
+  - minimumThreshold
+  - maximumThreshold
 properties:
-  strategyName:
-    $ref: ./StrategyName.yaml
   minimumThreshold:
     $ref: ./MoneyAmount.yaml
   maximumThreshold:

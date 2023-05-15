@@ -3,8 +3,7 @@ content:
     schema:
       required:
         - strategyName
-        - minimumThreshold
-        - maximumThreshold
+        - strategyParams
         - keAccountShopItemId
       properties:
         keAccountShopItemId:
@@ -12,8 +11,7 @@ content:
           format: uuid
         strategyName:
           $ref: ../schemas/StrategyName.yaml
-        minimumThreshold:
-          $ref: ../schemas/MoneyAmount.yaml
-        maximumThreshold:
-          $ref: ../schemas/MoneyAmount.yaml
-
+        strategyParams:
+          oneOf:
+            - $ref: '../schemas/CloseToMinimalStrategy.yaml'
+            - $ref: '../schemas/QuantityDependentStrategy.yaml'
