@@ -15,5 +15,5 @@ content:
         minimumThreshold:
           $ref: ../schemas/MoneyAmount.yaml
         maximumThreshold:
-          $ref: ..schemas/MoneyAmount.yaml
+          $ref: ../schemas/MoneyAmount.yaml
 

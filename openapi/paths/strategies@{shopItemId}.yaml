@@ -23,7 +23,7 @@ get:
       description: Стратегия не найдена
 patch:
   summary: Обновить данные стратегии
-  operationId: patchKeAccount
+  operationId: patchStrategy
   tags:
     - strategy
   requestBody:
