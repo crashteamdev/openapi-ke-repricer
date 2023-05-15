@@ -1,0 +1,9 @@
+type: object
+required:
+  - minimumThreshold
+  - maximumThreshold
+properties:
+  minimumThreshold:
+    $ref: ./MoneyAmount.yaml
+  maximumThreshold:
+    $ref: ./MoneyAmount.yaml
