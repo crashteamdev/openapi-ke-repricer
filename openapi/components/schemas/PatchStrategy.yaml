@@ -1,6 +1,6 @@
 type: object
 properties:
   strategyName:
-    $ref: ./StrategyName.yaml
+    $ref: ./StrategyType.yaml
   strategyParams:
     $ref: ./StrategyParams.yaml

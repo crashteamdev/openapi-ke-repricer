@@ -10,6 +10,6 @@ content:
           type: string
           format: uuid
         strategyName:
-          $ref: ../schemas/StrategyName.yaml
+          $ref: ../schemas/StrategyType.yaml
         strategyParams:
           $ref: ../schemas/StrategyParams.yaml

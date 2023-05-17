@@ -35,7 +35,7 @@ properties:
   isInPool:
     type: boolean
   strategyType:
-    $ref: ./StrategyName.yaml
+    $ref: ./StrategyType.yaml
   strategyId:
     type: integer
     format: int64

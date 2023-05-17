@@ -6,7 +6,7 @@ properties:
   keAccountShopItemId:
     $ref: ./KeAccountShopItemId.yaml
   strategyName:
-    $ref: ./StrategyName.yaml
+    $ref: ./StrategyType.yaml
   strategyParams:
     $ref: ../schemas/StrategyParams.yaml
 
