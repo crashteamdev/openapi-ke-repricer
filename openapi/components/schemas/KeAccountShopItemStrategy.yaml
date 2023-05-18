@@ -5,7 +5,7 @@ properties:
     format: int64
   keAccountShopItemId:
     $ref: ./KeAccountShopItemId.yaml
-  strategyName:
+  strategyType:
     $ref: ./StrategyType.yaml
   strategyParams:
     $ref: ../schemas/StrategyParams.yaml
