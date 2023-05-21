@@ -2,3 +2,8 @@ type: object
 oneOf:
   - $ref: '../schemas/CloseToMinimalStrategy.yaml'
   - $ref: '../schemas/QuantityDependentStrategy.yaml'
+discriminator:
+  propertyName: strategyType
+  mapping:
+    close_to_minimal: '../schemas/CloseToMinimalStrategy.yaml'
+    quantity_dependent: '../schemas/QuantityDependentStrategy.yaml'
