@@ -1,4 +1,4 @@
 type: object
 properties:
-  strategyParams:
-    $ref: ./StrategyParams.yaml
+  strategy:
+    $ref: ./Strategy.yaml
