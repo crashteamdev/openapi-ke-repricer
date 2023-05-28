@@ -1,4 +1,0 @@
-type: object
-oneOf:
-  - $ref: '../schemas/CloseToMinimalStrategy.yaml'
-  - $ref: '../schemas/QuantityDependentStrategy.yaml'
