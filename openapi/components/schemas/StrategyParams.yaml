@@ -1,28 +1,9 @@
-components:
-  schemas:
-    Strategy:
-      discriminator:
-        propertyName: strategyType
-        mapping:
-          close_to_minimal: '#/components/schemas/CloseToMinimalStrategy'
-          quantity_dependent: '#/components/schemas/QuantityDependentStrategy'
-      type: "object"
-
-    QuantityDependentStrategy:
-      allOf:
-        - $ref: '#/components/schemas/Strategy'
-        - type: object
-          properties:
-            minimumThreshold:
-              $ref: ./MoneyAmount.yaml
-            maximumThreshold:
-              $ref: ./MoneyAmount.yaml
-    CloseToMinimalStrategy:
-      allOf:
-        - $ref: '#/components/schemas/Strategy'
-        - type: object
-          properties:
-            minimumThreshold:
-              $ref: ./MoneyAmount.yaml
-            maximumThreshold:
-              $ref: ./MoneyAmount.yaml
+type: object
+oneOf:
+  - $ref: '../schemas/CloseToMinimalStrategy.yaml'
+  - $ref: '../schemas/QuantityDependentStrategy.yaml'
+discriminator:
+  propertyName: strategyType
+  mapping:
+    close_to_minimal: '../schemas/CloseToMinimalStrategy.yaml'
+    quantity_dependent: '../schemas/QuantityDependentStrategy.yaml'

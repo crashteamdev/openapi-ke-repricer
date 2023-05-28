@@ -1,6 +1,0 @@
-discriminator:
-  propertyName: strategyType
-  mapping:
-    close_to_minimal: '../schemas/CloseToMinimalStrategy.yaml'
-    quantity_dependent: '../schemas/QuantityDependentStrategy.yaml'
-type: "object"

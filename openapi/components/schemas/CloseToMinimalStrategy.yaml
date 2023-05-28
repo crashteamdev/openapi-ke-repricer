@@ -1,8 +1,12 @@
-allOf:
-  - $ref: '../schemas/Strategy.yaml'
-  - type: object
-    properties:
-      minimumThreshold:
-        $ref: ./MoneyAmount.yaml
-      maximumThreshold:
-        $ref: ./MoneyAmount.yaml
+type: object
+required:
+  - minimumThreshold
+  - maximumThreshold
+  - strategyType
+properties:
+  strategyType:
+    $ref: ../schemas/StrategyType.yaml
+  minimumThreshold:
+    $ref: ./MoneyAmount.yaml
+  maximumThreshold:
+    $ref: ./MoneyAmount.yaml
