@@ -2,10 +2,7 @@ type: object
 required:
   - minimumThreshold
   - maximumThreshold
-  - strategyType
 properties:
-  strategyType:
-    $ref: ../schemas/StrategyType.yaml
   minimumThreshold:
     $ref: ./MoneyAmount.yaml
   maximumThreshold:

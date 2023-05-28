@@ -2,11 +2,11 @@ content:
   application/json:
     schema:
       required:
-        - strategyParams
+        - strategy
         - keAccountShopItemId
       properties:
         keAccountShopItemId:
           type: string
           format: uuid
-        strategyParams:
-          $ref: ../schemas/StrategyParams.yaml
+        strategy:
+          $ref: ../schemas/Strategy.yaml
