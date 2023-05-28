@@ -5,7 +5,7 @@ required:
   - strategyType
 properties:
   strategyType:
-    type: String
+    type: string
   minimumThreshold:
     $ref: ./MoneyAmount.yaml
   maximumThreshold:
