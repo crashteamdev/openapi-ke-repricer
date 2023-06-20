@@ -1,4 +1,4 @@
-name: shopItemId
+name: shopItemStrategyId
 in: path
 required: true
 schema:
