@@ -3,6 +3,7 @@ required:
   - minimumThreshold
   - maximumThreshold
   - strategyType
+  - step
 properties:
   step:
     type: integer
