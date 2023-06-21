@@ -4,6 +4,8 @@ required:
   - maximumThreshold
   - strategyType
 properties:
+  step:
+    type: integer
   strategyType:
     type: string
   minimumThreshold:
