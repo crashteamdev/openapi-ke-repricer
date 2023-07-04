@@ -33,6 +33,10 @@ patch:
           $ref: ../components/schemas/PatchStrategy.yaml
   responses:
     '200':
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/KeAccountShopItemStrategy.yaml
       description: Данные стратегии обновлены.
     '400':
       $ref: '../components/responses/BadRequest.yaml'
