@@ -1,6 +1,6 @@
 parameters:
   - $ref: ../components/parameters/requestId.yaml
-  - $ref: ../components/schemas/KeAccountShopItemId.yaml
+  - $ref: ../components/parameters/keAccountShopItemId.yaml
 get:
   summary: Получить данные по стратегии
   operationId: getStrategy
