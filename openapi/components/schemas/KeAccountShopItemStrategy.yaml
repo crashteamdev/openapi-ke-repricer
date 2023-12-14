@@ -5,7 +5,6 @@ properties:
     format: int64
   step:
     type: integer
-    x-field-extra-annotation: "@JsonInclude(JsonInclude.Include.NON_NULL)"
   strategyType:
     type: string
   minimumThreshold:
