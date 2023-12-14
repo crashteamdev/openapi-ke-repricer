@@ -36,6 +36,3 @@ properties:
     type: boolean
   strategyType:
     $ref: ./StrategyType.yaml
-  strategyId:
-    type: integer
-    format: int64
