@@ -3,6 +3,14 @@ properties:
   id:
     type: integer
     format: int64
-  strategy:
-    $ref: ../schemas/Strategy.yaml
+  step:
+    type: integer
+    x-field-extra-annotation: "@JsonInclude(JsonInclude.Include.NON_NULL)"
+  strategyType:
+    type: string
+  minimumThreshold:
+    $ref: ./MoneyAmount.yaml
+  maximumThreshold:
+    $ref: ./MoneyAmount.yaml
+
 
