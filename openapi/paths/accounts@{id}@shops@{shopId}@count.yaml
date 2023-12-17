@@ -1,0 +1,24 @@
+get:
+  summary: Получение подсчета данных по магазину
+  operationId: getKeAccountShopData
+  tags:
+    - shop
+  parameters:
+    - $ref: ../components/parameters/requestId.yaml
+    - $ref: ../components/parameters/keAccountId.yaml
+    - $ref: ../components/parameters/keAccountShopId.yaml
+  responses:
+    '200':
+      description: Получен подсчет данных по магазину
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/ShopData.yaml
+    '400':
+      $ref: ../components/responses/BadRequest.yaml
+    '401':
+      $ref: ../components/responses/Unauthorized.yaml
+    '403':
+      $ref: ../components/responses/Forbidden.yaml
+    '404':
+      description: Товары не найдены
