@@ -52,10 +52,10 @@ paths:
     $ref: './paths/accounts@{id}@shops@{shopId}items@{shopItemId}@competitor-items.yaml'
   '/accounts/{id}/shops/{shopId}/items/{shopItemId}/similar':
     $ref: './paths/accounts@{id}@shops@{shopId}@items@{shopItemId}@similar.yaml'
-  '/accounts/{id}/items-in-pool':
-    $ref: './paths/accounts@{id}@items-in-pool.yaml'
-  '/accounts/{id}/shops/{shopId}/count':
-    $ref: './paths/accounts@{id}@shops@{shopId}@count.yaml'
+  '/user/{id}/items-in-pool':
+    $ref: './paths/user@{id}@items-in-pool.yaml'
+  '/user/{id}/limits':
+    $ref: './paths/user@{id}@limits.yaml'
   '/user/subscription':
     $ref: './paths/user@subscription.yaml'
   '/subscriptions':

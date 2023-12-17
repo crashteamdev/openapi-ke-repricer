@@ -1,11 +1,8 @@
-parameters:
-  - $ref: ../components/parameters/requestId.yaml
-  - $ref: ../components/parameters/keAccountId.yaml
 get:
   summary: Получить информацию об общем количестве товаров в пуле
   operationId: getKeAccountShopItemsInPool
   tags:
-    - account
+    - subscription
   responses:
     '200':
       description: Получена информация об общем количестве товаров в пуле
