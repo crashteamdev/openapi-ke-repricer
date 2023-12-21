@@ -56,6 +56,8 @@ paths:
     $ref: './paths/user@items-in-pool.yaml'
   '/user/limits':
     $ref: './paths/user@limits.yaml'
+  '/user/shop-item-restrictions':
+    $ref: './paths/user@shop-item-restrictions.yaml'
   '/user/subscription':
     $ref: './paths/user@subscription.yaml'
   '/subscriptions':

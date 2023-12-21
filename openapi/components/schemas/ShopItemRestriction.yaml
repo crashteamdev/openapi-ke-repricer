@@ -1,0 +1,9 @@
+type: object
+properties:
+  id:
+    type: string
+    format: userId
+  competitorLimit:
+    type: integer
+    format: int64
+
