@@ -34,5 +34,3 @@ properties:
     $ref: ./Discount.yaml
   isInPool:
     type: boolean
-  strategyType:
-    $ref: ./StrategyType.yaml
