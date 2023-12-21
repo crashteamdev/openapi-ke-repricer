@@ -34,3 +34,7 @@ properties:
     $ref: ./Discount.yaml
   isInPool:
     type: boolean
+  availableCompetitors:
+    type: integer
+  competitorsCurrent:
+    type: integer
