@@ -1,0 +1,5 @@
+type: string
+enum:
+  - close_to_minimal
+  - quantity_dependent
+  - equal_price
