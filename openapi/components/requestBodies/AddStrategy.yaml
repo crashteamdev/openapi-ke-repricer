@@ -3,9 +3,9 @@ content:
     schema:
       required:
         - strategy
-        - keAccountShopItemId
+        - accountShopItemId
       properties:
-        keAccountShopItemId:
+        accountShopItemId:
           type: string
           format: uuid
         strategy:
