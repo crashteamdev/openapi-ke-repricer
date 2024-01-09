@@ -2,10 +2,10 @@ type: object
 properties:
   userId:
     type: string
-  keAccountLimit:
+  accountLimit:
     type: integer
     format: int64
-  keAccountLimitCurrent:
+  accountLimitCurrent:
     type: integer
     format: int64
   itemPoolLimit:
