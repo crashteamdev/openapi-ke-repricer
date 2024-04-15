@@ -12,3 +12,7 @@ properties:
     $ref: ./MoneyAmount.yaml
   discount:
     $ref: ./Discount.yaml
+  competitorAvailableAmount:
+    type: integer
+  ignoreCompetitorAmount:
+    type: boolean
