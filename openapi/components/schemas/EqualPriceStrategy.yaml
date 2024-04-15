@@ -16,3 +16,5 @@ properties:
     type: integer
   ignoreCompetitorAmount:
     type: boolean
+  changeNotAvailableItemPrice:
+    type: boolean
