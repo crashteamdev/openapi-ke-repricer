@@ -13,8 +13,8 @@ properties:
   discount:
     $ref: ./Discount.yaml
   competitorAvailableAmount:
+    description: Пороговое кол-во товара у конкурента, по которому мы определяем, менять ли цену. Если null, то настройка игнорируется
     type: integer
-  ignoreCompetitorAmount:
-    type: boolean
   changeNotAvailableItemPrice:
+    description: Настройка о том, менять ли цену у товара, которого нет в наличии
     type: boolean
